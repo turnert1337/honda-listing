@@ -1,0 +1,51 @@
+{
+  "title": "2018 Honda Accord Hybrid",
+  "subtitle": "One owner · Bought new in Fayetteville · Full Honda dealer service history",
+  "price": 17000,
+  "price_note": "Private sale · clean Arkansas title in hand · no lien",
+  "status": "available",
+  "mileage": 40001,
+  "mileage_note": "as of April 2026 service; will update at listing",
+  "vin": "1HGCV3F15JA000122",
+  "color_exterior": "Modern Steel Metallic",
+  "color_interior": "Gray cloth",
+  "location": "Fayetteville, AR",
+  "contact": { "name": "Turner", "method": "Text or email", "phone": "", "email": "turnerjtomlinson@gmail.com" },
+  "highlights": [
+    { "k": "47 mpg", "v": "EPA combined, city and highway" },
+    { "k": "40k miles", "v": "one owner, purchased new 05/2018" },
+    { "k": "New tires", "v": "4 Michelins + alignment, April 2026" },
+    { "k": "Dealer-serviced", "v": "every visit at Honda of Fayetteville" },
+    { "k": "Honda Sensing", "v": "adaptive cruise, lane keep, collision mitigation" },
+    { "k": "No accidents", "v": "no collision or insurance-claim history" }
+  ],
+  "specs": [
+    ["Engine", "2.0L i-VTEC 4-cyl + electric motor (eCVT), 143 hp"],
+    ["Fuel economy", "47 / 47 / 47 mpg (city / hwy / combined)"],
+    ["Exterior", "Modern Steel Metallic"],
+    ["Interior", "Gray"],
+    ["Wheels", "17\" alloy, P225/50R17 Michelin (new 04/2026)"],
+    ["Driver assist", "Honda Sensing: ACC w/ low-speed follow, CMBS, LKAS, RDM"],
+    ["Convenience", "Push-button start, remote engine start, dual-zone climate, multi-view rear camera, Bluetooth HandsFreeLink"],
+    ["Built", "Marysville, Ohio"],
+    ["Original MSRP", "$25,990"]
+  ],
+  "service": [
+    ["04/2019", "11,064", "A1 service: oil, rotation, inspection"],
+    ["09/2019", "14,822", "Tire replaced (road damage)"],
+    ["11/2019", "16,406", "Audio unit replaced under warranty; recall 18-116 software"],
+    ["07/2021", "—", "Honda extended A/C condenser warranty to 10 yrs (transfers to next owner)"],
+    ["05/2023", "29,438", "Two tires replaced"],
+    ["04/2024", "32,283", "Oil & filter, inspection: brakes 8 mm all corners"],
+    ["07/2025", "36,865", "Oil & filter, inspection all green"],
+    ["12/2025", "37,783", "Radar re-aimed; recall 24-040 fuel pump motor replaced (warranty)"],
+    ["04/2026", "40,001", "All 4 tires replaced + 4-wheel alignment ($1,479)"]
+  ],
+  "disclosures": [
+    "Small scratch on the rear corner (photo below).",
+    "A few minor interior wear items, all functional.",
+    "Adaptive-cruise radar was re-aimed in 12/2025 (no collision history)."
+  ],
+  "photos": [],
+  "docs_note": "Full service invoices, window sticker, and original purchase paperwork available on request."
+}
