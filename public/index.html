@@ -54,7 +54,7 @@
   /* gallery */
   .gallery{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;-webkit-overflow-scrolling:touch;margin:0 -16px;padding-left:16px;padding-right:16px}
   .gallery img{flex:0 0 84%;max-width:420px;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);scroll-snap-align:center;background:var(--bg2);cursor:zoom-in}
-  @media(min-width:640px){.gallery{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible;margin:0;padding:0}.gallery img{flex:none;max-width:none;width:100%}}
+  @media(min-width:640px){.gallery{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible;margin:0;padding:0}.gallery img{flex:none;max-width:none;width:100%}#damageGallery{grid-template-columns:repeat(4,1fr)}}
   /* tables */
   table{width:100%;border-collapse:collapse;font-size:15px}
   td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
@@ -123,6 +123,12 @@
   <section>
     <h2>Known wear &amp; disclosures</h2>
     <ul class="disc" id="disclosures"></ul>
+    <div class="gallery" id="damageGallery" style="margin-top:16px"></div>
+  </section>
+
+  <section id="includedSec">
+    <h2>What comes with it</h2>
+    <ul class="disc" id="included"></ul>
   </section>
 
   <section>
@@ -163,10 +169,13 @@ async function main() {
   $('#price').innerHTML = money(L.price) + '<small>' + L.price_note + '</small>';
   $('#sPrice').textContent = money(L.price); $('#sMiles').textContent = miles(L.mileage) + ' · ' + L.location;
 
-  $('#heroImg').innerHTML = photos.length ? `<img class="hero-img" src="/photos/${photos[0]}" alt="${L.title}">` : `<div class="hero-ph">photos coming</div>`;
+  $('#heroImg').innerHTML = photos.length ? `<img class="hero-img" src="/photos/${photos.filter((p) => !p.startsWith('9'))[0]}" alt="${L.title}">` : `<div class="hero-ph">photos coming</div>`;
   $('#highlights').innerHTML = L.highlights.map((h) => `<div class="hl"><b>${h.k}</b><span>${h.v}</span></div>`).join('');
-  if (photos.length > 1) $('#gallery').innerHTML = photos.slice(1).map((p) => `<img src="/photos/${p}" loading="lazy" alt="">`).join('');
+  const main = photos.filter((p) => !p.startsWith('9')), dmg = photos.filter((p) => p.startsWith('9'));
+  if (main.length > 1) $('#gallery').innerHTML = main.slice(1).map((p) => `<img src="/photos/${p}" loading="lazy" alt="">`).join('');
   else $('#photosSec').style.display = 'none';
+  $('#damageGallery').innerHTML = dmg.map((p) => `<img src="/photos/${p}" loading="lazy" alt="">`).join('');
+  if (L.included && L.included.length) $('#included').innerHTML = L.included.map((d) => `<li>${d}</li>`).join(''); else $('#includedSec').style.display = 'none';
   $('#specs').innerHTML = L.specs.map(([k, v]) => `<tr><td>${k}</td><td>${v}</td></tr>`).join('');
   $('#service').innerHTML = L.service.map(([d, m, w]) => `<tr><td>${d}</td><td>${m}</td><td>${w}</td></tr>`).join('');
   $('#disclosures').innerHTML = L.disclosures.map((d) => `<li>${d}</li>`).join('');

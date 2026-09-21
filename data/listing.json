@@ -1,51 +1,148 @@
 {
   "title": "2018 Honda Accord Hybrid",
-  "subtitle": "One owner · Bought new in Fayetteville · Full Honda dealer service history",
+  "subtitle": "One owner \u00b7 Bought new in Fayetteville \u00b7 Full Honda dealer service history \u00b7 Sold as-is",
   "price": 17000,
-  "price_note": "Private sale · clean Arkansas title in hand · no lien",
+  "price_note": "Private sale \u00b7 clean Arkansas title in hand, lien released \u00b7 sold as-is",
   "status": "available",
-  "mileage": 40001,
-  "mileage_note": "as of April 2026 service; will update at listing",
+  "mileage": 44592,
+  "mileage_note": "odometer photo 09/21/2026",
   "vin": "1HGCV3F15JA000122",
   "color_exterior": "Modern Steel Metallic",
   "color_interior": "Gray cloth",
   "location": "Fayetteville, AR",
-  "contact": { "name": "Turner", "method": "Text or email", "phone": "", "email": "turnerjtomlinson@gmail.com" },
+  "contact": {
+    "name": "Turner",
+    "method": "Text or email",
+    "phone": "",
+    "email": "turnerjtomlinson@gmail.com"
+  },
   "highlights": [
-    { "k": "47 mpg", "v": "EPA combined, city and highway" },
-    { "k": "40k miles", "v": "one owner, purchased new 05/2018" },
-    { "k": "New tires", "v": "4 Michelins + alignment, April 2026" },
-    { "k": "Dealer-serviced", "v": "every visit at Honda of Fayetteville" },
-    { "k": "Honda Sensing", "v": "adaptive cruise, lane keep, collision mitigation" },
-    { "k": "No accidents", "v": "no collision or insurance-claim history" }
+    {
+      "k": "47 mpg",
+      "v": "EPA combined, city and highway"
+    },
+    {
+      "k": "44.6k miles",
+      "v": "one owner, purchased new 05/2018"
+    },
+    {
+      "k": "New tires",
+      "v": "4 Michelins + alignment, April 2026"
+    },
+    {
+      "k": "Dealer-serviced",
+      "v": "every visit at Honda of Fayetteville"
+    },
+    {
+      "k": "Honda Sensing",
+      "v": "adaptive cruise, lane keep, collision mitigation"
+    },
+    {
+      "k": "No accidents",
+      "v": "no collision or insurance-claim history"
+    }
   ],
   "specs": [
-    ["Engine", "2.0L i-VTEC 4-cyl + electric motor (eCVT), 143 hp"],
-    ["Fuel economy", "47 / 47 / 47 mpg (city / hwy / combined)"],
-    ["Exterior", "Modern Steel Metallic"],
-    ["Interior", "Gray"],
-    ["Wheels", "17\" alloy, P225/50R17 Michelin (new 04/2026)"],
-    ["Driver assist", "Honda Sensing: ACC w/ low-speed follow, CMBS, LKAS, RDM"],
-    ["Convenience", "Push-button start, remote engine start, dual-zone climate, multi-view rear camera, Bluetooth HandsFreeLink"],
-    ["Built", "Marysville, Ohio"],
-    ["Original MSRP", "$25,990"]
+    [
+      "Engine",
+      "2.0L i-VTEC 4-cyl + electric motor (eCVT), 143 hp"
+    ],
+    [
+      "Fuel economy",
+      "47 / 47 / 47 mpg (city / hwy / combined)"
+    ],
+    [
+      "Exterior",
+      "Modern Steel Metallic"
+    ],
+    [
+      "Interior",
+      "Gray"
+    ],
+    [
+      "Wheels",
+      "17\" alloy, P225/50R17 Michelin (new 04/2026)"
+    ],
+    [
+      "Driver assist",
+      "Honda Sensing: ACC w/ low-speed follow, CMBS, LKAS, RDM"
+    ],
+    [
+      "Convenience",
+      "Push-button start, remote engine start, dual-zone climate, multi-view rear camera, Bluetooth HandsFreeLink"
+    ],
+    [
+      "Built",
+      "Marysville, Ohio"
+    ],
+    [
+      "Original MSRP",
+      "$25,990"
+    ]
   ],
   "service": [
-    ["04/2019", "11,064", "A1 service: oil, rotation, inspection"],
-    ["09/2019", "14,822", "Tire replaced (road damage)"],
-    ["11/2019", "16,406", "Audio unit replaced under warranty; recall 18-116 software"],
-    ["07/2021", "—", "Honda extended A/C condenser warranty to 10 yrs (transfers to next owner)"],
-    ["05/2023", "29,438", "Two tires replaced"],
-    ["04/2024", "32,283", "Oil & filter, inspection: brakes 8 mm all corners"],
-    ["07/2025", "36,865", "Oil & filter, inspection all green"],
-    ["12/2025", "37,783", "Radar re-aimed; recall 24-040 fuel pump motor replaced (warranty)"],
-    ["04/2026", "40,001", "All 4 tires replaced + 4-wheel alignment ($1,479)"]
+    [
+      "04/2019",
+      "11,064",
+      "A1 service: oil, rotation, inspection"
+    ],
+    [
+      "09/2019",
+      "14,822",
+      "Tire replaced (road damage)"
+    ],
+    [
+      "11/2019",
+      "16,406",
+      "Audio unit replaced under warranty; recall 18-116 software"
+    ],
+    [
+      "07/2021",
+      "\u2014",
+      "Honda extended A/C condenser warranty to 10 yrs (transfers to next owner)"
+    ],
+    [
+      "05/2023",
+      "29,438",
+      "Two tires replaced"
+    ],
+    [
+      "04/2024",
+      "32,283",
+      "Oil & filter, inspection: brakes 8 mm all corners"
+    ],
+    [
+      "07/2025",
+      "36,865",
+      "Oil & filter, inspection all green"
+    ],
+    [
+      "12/2025",
+      "37,783",
+      "Radar re-aimed; recall 24-040 fuel pump motor replaced (warranty)"
+    ],
+    [
+      "04/2026",
+      "40,001",
+      "All 4 tires replaced + 4-wheel alignment ($1,479)"
+    ]
   ],
   "disclosures": [
-    "Small scratch on the rear corner (photo below).",
-    "A few minor interior wear items, all functional.",
+    "Scuffs and light scratches on the rear passenger-side bumper corner, with two small paint chips at the quarter-panel seam (photos below). Cosmetic; bumper is undented.",
+    "A few small, shallow hail dings on the hood, roof and trunk lid from a 2021 storm. No paint damage; visible only in reflections (photos below).",
+    "Adhesive residue on the head-unit bezel from a previous magnetic phone mount; the physical play button below the screen is stuck. Audio, Bluetooth and steering-wheel controls all work normally.",
+    "Light stains on the gray cloth of the front passenger seat and rear bench (photos below). No tears, no odors.",
     "Adaptive-cruise radar was re-aimed in 12/2025 (no collision history)."
   ],
   "photos": [],
-  "docs_note": "Full service invoices, window sticker, and original purchase paperwork available on request."
+  "docs_note": "Full service invoices, window sticker, and original purchase paperwork available on request.",
+  "included": [
+    "Original Honda owner's manual in case, wheel-lock key set",
+    "Two Honda smart keys with remote start",
+    "Honda all-weather rubber floor mats (front and rear)",
+    "Portable wireless Apple CarPlay screen (~6\", USB-C, with 12V adapter) \u2014 previously mounted on the dash, unmounted and included",
+    "Magnetic (MagSafe-compatible) phone mount",
+    "Front seat covers (driver's seat underneath is clean)",
+    "Factory tire inflator/sealant kit under trunk floor (hybrid has no spare, as built)"
+  ]
 }
