@@ -30,16 +30,16 @@
       "v": "4 Michelins + alignment, April 2026"
     },
     {
-      "k": "Dealer-serviced",
-      "v": "every visit at Honda of Fayetteville"
+      "k": "13 dealer visits",
+      "v": "every service at Honda of Fayetteville since new"
     },
     {
       "k": "Honda Sensing",
       "v": "adaptive cruise, lane keep, collision mitigation"
     },
     {
-      "k": "No accidents",
-      "v": "no collision or insurance-claim history"
+      "k": "5 recalls done",
+      "v": "all open campaigns completed; no accidents on record"
     }
   ],
   "specs": [
@@ -64,6 +64,10 @@
       "17\" alloy, P225/50R17 Michelin (new 04/2026)"
     ],
     [
+      "Recent wear items",
+      "12V battery, CVT fluid and brake fluid 05/2023; 4 tires + alignment 04/2026"
+    ],
+    [
       "Driver assist",
       "Honda Sensing: ACC w/ low-speed follow, CMBS, LKAS, RDM"
     ],
@@ -82,49 +86,69 @@
   ],
   "service": [
     [
+      "09/2018",
+      "6,893",
+      "First dealer service visit"
+    ],
+    [
       "04/2019",
       "11,064",
-      "A1 service: oil, rotation, inspection"
+      "Oil and filter, tire rotation, inspection"
     ],
     [
       "09/2019",
       "14,822",
-      "Tire replaced (road damage)"
+      "Rear tire replaced (road damage)"
     ],
     [
       "11/2019",
       "16,406",
-      "Audio unit replaced under warranty; recall 18-116 software"
+      "Audio unit replaced under warranty; hybrid software recall 18-116"
     ],
     [
-      "07/2021",
-      "\u2014",
-      "Honda extended A/C condenser warranty to 10 yrs (transfers to next owner)"
+      "02/2021",
+      "20,427",
+      "Oil and filter, rotation, brake fluid flush, recall 20-030"
+    ],
+    [
+      "06/2022",
+      "26,068",
+      "Oil and filter, rotation, inspection"
+    ],
+    [
+      "12/2022",
+      "28,441",
+      "New wiper blades; second key fob cut and programmed"
+    ],
+    [
+      "05/2023",
+      "29,420",
+      "Major service: oil, brake fluid, CVT fluid, new 12V battery, air filters; seat-belt buckle recalls 23-016"
     ],
     [
       "05/2023",
       "29,438",
-      "Two tires replaced"
+      "Two new Michelin tires"
     ],
     [
       "04/2024",
       "32,283",
-      "Oil & filter, inspection: brakes 8 mm all corners"
+      "Oil and filter, inspection: brakes 8 mm all corners"
     ],
     [
       "07/2025",
       "36,865",
-      "Oil & filter, inspection all green"
+      "Oil and filter, inspection all green"
     ],
     [
       "12/2025",
-      "37,783",
-      "Radar re-aimed; recall 24-040 fuel pump motor replaced (warranty)"
+      "37,787",
+      "Adaptive-cruise radar re-aimed; fuel pump recall 24-040 completed"
     ],
     [
       "04/2026",
-      "40,001",
-      "All 4 tires replaced + 4-wheel alignment ($1,479)"
+      "40,002",
+      "Four new Michelin tires + four-wheel alignment ($1,479)"
     ]
   ],
   "disclosures": [
@@ -135,7 +159,7 @@
     "Adaptive-cruise radar was re-aimed in 12/2025 (no collision history)."
   ],
   "photos": [],
-  "docs_note": "Full service invoices, window sticker, and original purchase paperwork available on request.",
+  "docs_note": "Complete Honda dealer history listing (13 visits, 2018\u20132026), individual invoices, window sticker, and original purchase paperwork available on request.",
   "included": [
     "Original Honda owner's manual in case, wheel-lock key set",
     "Two Honda smart keys with remote start",

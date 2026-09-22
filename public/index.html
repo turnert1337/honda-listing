@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="clean">
+<html lang="en" data-look="clean">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,19 +8,19 @@
 <meta name="robots" content="noindex">
 <style>
   /* ---------- tokens per theme ---------- */
-  :root[data-theme="clean"]{
+  :root[data-look="clean"]{
     --bg:#ffffff; --bg2:#f4f6f8; --ink:#101418; --ink2:#5b6570; --line:#e3e7eb;
     --accent:#1256b8; --accent-ink:#fff; --card:#fff; --radius:14px;
     --font:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Roboto,Helvetica,Arial,sans-serif; --display:var(--font);
     --shadow:0 8px 30px rgba(16,20,24,.08);
   }
-  :root[data-theme="dark"]{
+  :root[data-look="dark"]{
     --bg:#0f1114; --bg2:#171a1f; --ink:#f2f3f5; --ink2:#9aa3ad; --line:#262b32;
     --accent:#f5a524; --accent-ink:#151515; --card:#171a1f; --radius:16px;
     --font:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Roboto,Helvetica,Arial,sans-serif; --display:var(--font);
     --shadow:0 12px 40px rgba(0,0,0,.45);
   }
-  :root[data-theme="editorial"]{
+  :root[data-look="editorial"]{
     --bg:#f7f3ec; --bg2:#efe8dc; --ink:#22201c; --ink2:#6b655b; --line:#ddd4c5;
     --accent:#8a2f1d; --accent-ink:#fff; --card:#fffdf8; --radius:6px;
     --font:"Georgia","Iowan Old Style","Palatino",serif; --display:"Georgia","Iowan Old Style",serif;
@@ -152,11 +152,11 @@ const miles = (n) => n.toLocaleString('en-US') + ' mi';
 // theme: ?theme=x overrides; picker shows on localhost or ?pick=1
 const q = new URLSearchParams(location.search);
 const saved = q.get('theme') || localStorage.getItem('theme');
-if (saved) document.documentElement.dataset.theme = saved;
+if (saved) document.documentElement.dataset.look = saved;
 if (location.hostname === 'localhost' || q.get('pick')) $('#picker').classList.add('on');
 document.querySelectorAll('.picker button').forEach((b) => {
-  b.classList.toggle('cur', b.dataset.t === document.documentElement.dataset.theme);
-  b.onclick = () => { document.documentElement.dataset.theme = b.dataset.t; localStorage.setItem('theme', b.dataset.t); document.querySelectorAll('.picker button').forEach((x) => x.classList.toggle('cur', x === b)); };
+  b.classList.toggle('cur', b.dataset.t === document.documentElement.dataset.look);
+  b.onclick = () => { document.documentElement.dataset.look = b.dataset.t; localStorage.setItem('theme', b.dataset.t); document.querySelectorAll('.picker button').forEach((x) => x.classList.toggle('cur', x === b)); };
 });
 
 async function main() {
