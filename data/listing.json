@@ -2,7 +2,7 @@
   "title": "2018 Honda Accord Hybrid",
   "subtitle": "One owner \u00b7 Bought new in Fayetteville \u00b7 Full Honda dealer service history \u00b7 Sold as-is",
   "price": 17000,
-  "price_note": "Private sale \u00b7 clean Arkansas title in hand, lien released \u00b7 sold as-is",
+  "price_note": "Private sale \u00b7 Arkansas title in hand \u00b7 sold as-is",
   "status": "available",
   "mileage": 44592,
   "mileage_note": "odometer photo 09/21/2026",
@@ -183,5 +183,6 @@
     "Portable wireless Apple CarPlay screen (~6\", USB-C, with 12V adapter), unmounted",
     "Magnetic (MagSafe-compatible) phone mount",
     "Factory tire inflator/sealant kit under the trunk floor (hybrid has no spare, as built)"
-  ]
+  ],
+  "alert": "Lien status not yet verified: title shows a Capital One release signed 01/2024, but the 12/2025 registration still lists Capital One as lienholder. Being confirmed with Capital One and AR DFA before sale."
 }

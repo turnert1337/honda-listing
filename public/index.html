@@ -45,6 +45,7 @@
   .price small{display:block;font-size:13px;font-weight:400;color:var(--ink2);letter-spacing:0}
   .badge{display:inline-block;padding:4px 10px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:600;letter-spacing:.03em;text-transform:uppercase}
   .badge.sold{background:#777}
+  .alert{color:#c0392b;font-weight:600;font-size:14px;margin:12px 0 0;border:1px solid #c0392b;border-radius:8px;padding:10px 12px}
   /* highlights */
   .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
   @media(min-width:640px){.grid{grid-template-columns:repeat(3,1fr)}}
@@ -98,6 +99,7 @@
       </div>
       <div class="price" id="price"></div>
     </div>
+    <p id="alert" class="alert" hidden></p>
   </section>
 
   <section>
@@ -167,6 +169,7 @@ async function main() {
   $('#status').textContent = L.status === 'sold' ? 'Sold' : L.status === 'pending' ? 'Sale pending' : 'For sale';
   if (L.status !== 'available') $('#status').classList.add('sold');
   $('#price').innerHTML = money(L.price) + '<small>' + L.price_note + '</small>';
+  if (L.alert) { $('#alert').textContent = L.alert; $('#alert').hidden = false; }
   $('#sPrice').textContent = money(L.price); $('#sMiles').textContent = miles(L.mileage) + ' · ' + L.location;
 
   $('#heroImg').innerHTML = photos.length ? `<img class="hero-img" src="/photos/${photos.filter((p) => !p.startsWith('9'))[0]}" alt="${L.title}">` : `<div class="hero-ph">photos coming</div>`;
