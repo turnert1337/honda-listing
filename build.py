@@ -18,6 +18,7 @@ for stale in os.listdir(os.path.join(dist, 'photos')):
         try: os.remove(os.path.join(dist, 'photos', stale))
         except OSError: print('could not remove stale', stale)
 open(os.path.join(dist, 'index.html'), 'w').write(out)
+shutil.copy(os.path.join(root, 'public/cartalk.html'), os.path.join(dist, 'cartalk.html'))
 open(os.path.join(dist, '.nojekyll'), 'w').close()
 for f in photos:
     shutil.copy(os.path.join(root, 'public/photos', f), os.path.join(dist, 'photos', f))

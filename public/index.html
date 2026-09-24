@@ -81,6 +81,17 @@
   .picker button{border:0;background:transparent;color:var(--ink);padding:6px 10px;border-radius:999px;font-size:12px;cursor:pointer}
   .picker button.cur{background:var(--accent);color:var(--accent-ink)}
   footer{padding:30px 0 40px;font-size:12px;color:var(--ink2);text-align:center}
+  /* car-talk ticker */
+  .ticker{display:block;overflow:hidden;background:var(--ink);color:var(--bg);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:8px 0;white-space:nowrap}
+  .ticker-track{display:inline-block;animation:tick 28s linear infinite}
+  .ticker-track span{display:inline-block;padding-right:40px}
+  .ticker:hover .ticker-track{animation-play-state:paused}
+  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+  /* floating contact */
+  .float-cta{position:fixed;top:44px;right:12px;z-index:7;padding:10px 16px;border-radius:999px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;font-size:13px;box-shadow:var(--shadow)}
+  .picker{top:auto;bottom:80px;right:12px}
+  @media(min-width:640px){.picker{bottom:12px}}
 </style>
 </head>
 <body>
@@ -88,6 +99,8 @@
   <button data-t="clean">Clean</button><button data-t="dark">Dark</button><button data-t="editorial">Editorial</button>
 </div>
 
+<a class="ticker" href="cartalk.html" aria-label="Simulated Car-Talk Call-In"><div class="ticker-track"><span>Simulated Car-Talk Call-In &nbsp;·&nbsp; Clique &amp; Claque take Turner's call &nbsp;·&nbsp; tap to listen in &nbsp;·&nbsp; </span><span aria-hidden="true">Simulated Car-Talk Call-In &nbsp;·&nbsp; Clique &amp; Claque take Turner's call &nbsp;·&nbsp; tap to listen in &nbsp;·&nbsp; </span></div></a>
+<a class="float-cta" id="floatCta" href="#">Reach out to Turner</a>
 <div class="wrap">
   <section class="hero">
     <div id="heroImg"></div>
@@ -189,6 +202,7 @@ async function main() {
   if (c.email) btns.push(`<a class="btn" href="mailto:${c.email}?subject=${encodeURIComponent(L.title)}">Email ${c.name}</a>`);
   $('#ctaBtns').innerHTML = btns.join('');
   $('#sBtn').href = c.phone ? `sms:${c.phone.replace(/\D/g, '')}` : `mailto:${c.email}`;
+  $('#floatCta').href = c.phone ? `sms:${c.phone.replace(/\D/g, '')}` : `mailto:${c.email}?subject=${encodeURIComponent(L.title)}`;
   $('#foot').textContent = L.docs_note;
   document.querySelectorAll('.gallery img, .hero-img').forEach((img) => img.onclick = () => { $('#lbImg').src = img.src; $('#lb').classList.add('on'); });
   $('#lb').onclick = () => $('#lb').classList.remove('on');
