@@ -15,14 +15,15 @@
   h1{font-family:Georgia,"Iowan Old Style",serif;font-size:clamp(26px,6vw,40px);margin:0 0 4px;line-height:1.1}
   .sub{color:var(--ink2);font-style:italic;margin-bottom:8px}
   .disclaimer{font-size:12px;color:var(--ink2);border:1px dashed var(--line);border-radius:8px;padding:8px 10px;margin-bottom:24px}
-  .hosts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px;position:sticky;top:52px;background:var(--bg);padding:8px 0;z-index:4}
-  .host{text-align:center;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:12px;padding:6px;border-bottom:3px solid}
-  .host.a{color:var(--a);border-color:var(--a)}.host.b{color:var(--b);border-color:var(--b)}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px}
-  .line{padding:12px 14px;border-radius:14px;background:var(--card);border:1px solid var(--line);font-size:15px}
-  .line.a{grid-column:1;border-left:4px solid var(--a);border-top-left-radius:4px}
-  .line.b{grid-column:2;border-right:4px solid var(--b);border-top-right-radius:4px}
-  .line.both{grid-column:1/3;text-align:center;font-weight:800;background:var(--ink);color:#fff;border:0}
+  .script{max-width:720px}
+  .line{position:relative;margin:0 0 14px;padding:0 0 0 0;font-size:16px;line-height:1.55;max-width:78%}
+  .line .who{display:block;font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:11px;margin-bottom:2px}
+  .line.a{margin-right:auto;text-align:left}
+  .line.a .who{color:var(--a)}
+  .line.b{margin-left:auto;text-align:left;padding-left:16px;border-left:3px solid var(--b)}
+  .line.b .who{color:var(--b)}
+  .line.both{max-width:none;text-align:center;font-weight:800;margin-top:22px;padding:14px;background:var(--ink);color:#fff;border-radius:12px}
+  @media(max-width:520px){.line{max-width:88%}}
   .credits{margin-top:28px;color:var(--ink2);font-size:13px;font-style:italic;text-align:center}
   @media(max-width:520px){.grid{grid-template-columns:1fr}.line.a,.line.b{grid-column:1}.line.b{margin-left:24px}.line.a{margin-right:24px}.hosts{grid-template-columns:1fr 1fr}}
 </style>
@@ -33,8 +34,7 @@
   <h1>Car Squawk: The 2018 Accord Hybrid</h1>
   <div class="sub">Starring Clique and Claque, the Tapped-Out Brothers, broadcasting from Our Fair City (Fayetteville, AR)</div>
   <div class="disclaimer">A parody written for this listing. Not affiliated with any radio program, living or dead. Every fact in it is on the main page; every joke is on us.</div>
-  <div class="hosts"><div class="host a">Claque</div><div class="host b">Clique</div></div>
-  <div class="grid" id="lines"></div>
+  <div class="script" id="lines"></div>
   <div class="credits">Staff credits: Chief Tire Forensics Officer, Hugh Ranoverit. Statistician, Marge Innovera. Head of Hail Relations, Dent A. Lotte.</div>
   <p style="text-align:center;margin-top:24px"><a class="back" href="./">&larr; Back to the listing</a></p>
 </div>
@@ -64,7 +64,8 @@ const L=[
 ["b","And a note to buyers: Two dogs, non-smoker. The dogs, that is. Turner's status is unconfirmed."],
 ["a","Well, you've wasted another perfectly good five minutes reading Car Squawk. Our lawyers are Dewey, Cheetham &amp; Howe."],
 ["both","Don't buy a car like my brother! Don't buy a car like MY brother!"]];
-document.getElementById('lines').innerHTML=L.map(([w,t])=>`<div class="line ${w}">${t}</div>`).join('');
+const who={a:'Claque',b:'Clique',both:'Both'};
+document.getElementById('lines').innerHTML=L.map(([w,t])=>`<div class="line ${w}"><span class="who">${who[w]}</span>${t}</div>`).join('');
 </script>
 </body>
 </html>
