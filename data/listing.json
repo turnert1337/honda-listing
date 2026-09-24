@@ -2,7 +2,7 @@
   "title": "2018 Honda Accord Hybrid",
   "subtitle": "One owner \u00b7 Bought new in Fayetteville \u00b7 Full Honda dealer service history \u00b7 Sold as-is",
   "price": 17000,
-  "price_note": "Private sale \u00b7 Arkansas title in hand \u00b7 sold as-is",
+  "price_note": "Private sale \u00b7 clean Arkansas title in hand \u00b7 lien released, release letter included \u00b7 sold as-is",
   "status": "available",
   "mileage": 44592,
   "mileage_note": "odometer photo 09/21/2026",
@@ -38,8 +38,8 @@
       "v": "adaptive cruise, lane keep, collision mitigation"
     },
     {
-      "k": "5 recalls done",
-      "v": "all open campaigns completed; no accidents on record"
+      "k": "Clear title",
+      "v": "lien released; AR DFA confirmed title + release letter is all a buyer needs"
     }
   ],
   "specs": [
@@ -176,6 +176,7 @@
   "photos": [],
   "docs_note": "Complete Honda dealer history listing (13 visits, 2018\u20132026), individual invoices, window sticker, and original purchase paperwork available on request.",
   "included": [
+    "Original Arkansas title (lien released and signed off by Capital One) plus a copy of the lien release letter. Confirmed with AR DFA: that's everything the buyer needs to register; retitle within 60 days.",
     "Two Honda smart keys with remote start",
     "Original Honda owner's manual in case, wheel-lock key set",
     "Honda all-weather rubber floor mats, front and rear",
@@ -183,6 +184,5 @@
     "Portable wireless Apple CarPlay screen (~6\", USB-C, with 12V adapter), unmounted",
     "Magnetic (MagSafe-compatible) phone mount",
     "Factory tire inflator/sealant kit under the trunk floor (hybrid has no spare, as built)"
-  ],
-  "alert": "Lien status not yet verified: title shows a Capital One release signed 01/2024, but the 12/2025 registration still lists Capital One as lienholder. Being confirmed with Capital One and AR DFA before sale."
+  ]
 }

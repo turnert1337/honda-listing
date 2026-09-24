@@ -12,8 +12,11 @@ out = src.replace(
 out = out.replace('src="/photos/', 'src="photos/')
 out = out.replace("if (location.hostname === 'localhost' || q.get('pick'))", "if (q.get('pick'))")
 dist = os.path.join(root, 'docs')
-shutil.rmtree(dist, ignore_errors=True)
-os.makedirs(os.path.join(dist, 'photos'))
+os.makedirs(os.path.join(dist, 'photos'), exist_ok=True)
+for stale in os.listdir(os.path.join(dist, 'photos')):
+    if stale not in photos:
+        try: os.remove(os.path.join(dist, 'photos', stale))
+        except OSError: print('could not remove stale', stale)
 open(os.path.join(dist, 'index.html'), 'w').write(out)
 open(os.path.join(dist, '.nojekyll'), 'w').close()
 for f in photos:
